@@ -35,6 +35,7 @@
 
 
 
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X5H3JDSXSM"></script>
 <script>
@@ -123,50 +124,31 @@
 			}
 		}
 
-		
-   .btn-hover-effect {
-      display: inline-block;
-      padding: 12px 28px;
-	  margin-bottom: 1em;
-	  margin-right: 1em;
-      font-size: 16px;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: #fff;
-      background: linear-gradient(135deg, #f0d104, #cece04);
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      position: relative;
-      overflow: hidden;
-    }
+		.btn-hover-effect {
+			transition: all 0.3s ease;
+			position: relative;
+			overflow: hidden;
+		}
 
-    .btn-hover-effect:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 25px rgba(233, 217, 4, 0.3);
-    }
+		.btn-hover-effect:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+		}
 
-    .btn-hover-effect::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(
-        90deg, 
-        transparent, 
-        rgba(255, 255, 255, 0.2), 
-        transparent
-      );
-      transition: left 0.5s;
-    }
+		.btn-hover-effect::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -100%;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+			transition: left 0.5s;
+		}
 
-    .btn-hover-effect:hover::before {
-      left: 100%;
-    }
-
+		.btn-hover-effect:hover::before {
+			left: 100%;
+		}
 	</style>
 
 </head>
@@ -181,7 +163,8 @@
 
 		<!-- Logo -->
 		<a href="index.html" class="logo">
-			<img src="img/logo.png" class="logo-light" alt=""> 
+			<img src="img/logo.png" class="logo-light" alt="">
+
 		</a>
 
 		<!-- Mobile Menu Icon -->
@@ -192,12 +175,10 @@
 		<!-- Navigation -->
 		<nav class="navigation onepage">
 			<ul>
-				<li><a href="#main">Home</a></li>
-				<li><a href="#my-role">My Role</a></li>
-				<li><a href="#challenge">Challenge</a></li>
-				<li><a href="#solution">Solution</a></li>
-				<li><a href="#impact">Impact</a></li>
-				<li><a href="https://docs.google.com/document/d/1XXFu9mcJjcn8ifG3DRXgOQv4i16gmTrq/edit?usp=sharing&ouid=117668276822143382538&rtpof=true&sd=true" target="_blank">Resume</a></li>
+				<li><a href="#main">Top</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#awards">Awards</a></li>
+				<li><a href="#skills">Skills</a></li>
 			</ul>
 		</nav>
 		<!-- /Navigation -->
@@ -205,346 +186,427 @@
 	</header>
 	<!-- /Header -->
 
-<!-- Main Content -->
+	<!-- Main Content -->
 	<main id="main">
 
-		
-<!-- Hero -->
-    <section class="first-section">
-       <h1 id="title">🏆 <br>Edward R. Murrow Award – Digital (2025)</h1>
-        <picture>
-          <source media="(max-width: 575px)" srcset="img/banner-mobile.png"></source>
-          <source media="(min-width: 800px)" srcset="img/myanmar-gen-z.jpg"></source>
-          <img src="img/myanmar-gen-z.jpg" id="myanmar-gen-z" alt="civilians">
-        </picture>
-    </section>
-<!-- /Hero -->
-		<!-- Scroll Down Line -->
-		<a href="#" class="scroll-down"><span></span></a>
 
 		<!-- About -->
-		<section class="about" data-background="#fbfcfd" class="section-borders ">
-			<div class="container py-8 py-sm-4">
-				<div class="row justify-content-between">
+		<section class="about">
 
-					
-					<div class="col-lg-6  text-lg-right">
-					<h3> Myanmar Gen Z: Fighting a War for the Future</h3>
-						<p>Battle lines in Myanmar are constantly moving. Rebel forces  made up of hundreds of factions  have been on the march in the past year, scoring a series of victories against junta forces.</p>
-						</p>
-						<div class="row py-6 justify-content-center text-center text-light">
-						<button class="btn-hover-effect"><a href="https://www.rfa.org/english/special-reports/myanmar-gen-z-fighting-war-for-future/" target="_blank"> View Live Project</a></button>
-						</div>
-						
-					</div>
+			<div class="col-lg-4 items-center">
 
-					<div class="col-lg-5">
-						
-							<p>This long-form digital special report explores how Myanmar’s Gen Z is at the frontlines of the resistance against military rule, blending <strong>storytelling, interactive design, and visual journalism.</strong> The site combines compelling narratives with a highly visual, responsive interface to engage global audiences.</p>
+				<svg viewBox="0 0 600 600" class="w-full h-auto max-w-lg"
+					style="margin: 10px auto !important; display: block;">
+					<!-- Background circles -->
+					<circle cx="300" cy="300" r="280" fill="rgba(255,255,255,0.1)" class="floating-animation" />
+					<circle cx="300" cy="300" r="220" fill="rgba(255,255,255,0.05)"
+						class="floating-animation-delayed" />
 
-						<div class="row py-6 justify-content-center text-center text-light">
-						
-						<button class="btn-hover-effect"><a href="https://minhhale.github.io/special-reports/graphics/" target="_blank"> View My Graphics Portfolio</a></button>
-						</div>
-						
-					</div>
+					<!-- Capitol dome silhouette -->
+					<g class="floating-animation-delayed-2" opacity="0.3">
+						<path d="M200 350 Q300 280 400 350 L400 380 Q300 360 200 380 Z" fill="#FFD700" />
+						<rect x="290" y="350" width="20" height="40" fill="#FFD700" />
+						<circle cx="300" cy="340" r="8" fill="#FFD700" />
+					</g>
+
+					<!-- Open book -->
+					<g class="floating-animation" opacity="0.4">
+						<path d="M150 200 Q200 180 250 200 L250 250 Q200 230 150 250 Z" fill="#E0E7FF" />
+						<path d="M250 200 Q300 180 350 200 L350 250 Q300 230 250 250 Z" fill="#C7D2FE" />
+						<line x1="170" y1="210" x2="230" y2="210" stroke="#6366F1" stroke-width="2" />
+						<line x1="170" y1="220" x2="230" y2="220" stroke="#6366F1" stroke-width="2" />
+						<line x1="270" y1="210" x2="330" y2="210" stroke="#6366F1" stroke-width="2" />
+						<line x1="270" y1="220" x2="330" y2="220" stroke="#6366F1" stroke-width="2" />
+					</g>
+
+					<!-- Cultural patterns -->
+					<g class="floating-animation-delayed" opacity="0.3">
+						<circle cx="450" cy="150" r="4" fill="#FFD700" />
+						<circle cx="470" cy="140" r="3" fill="#FFD700" />
+						<circle cx="460" cy="170" r="5" fill="#FFD700" />
+						<path d="M440 160 L450 150 L460 160 L450 170 Z" fill="#FFD700" />
+						<path d="M470 160 L480 150 L490 160 L480 170 Z" fill="#FFD700" />
+					</g>
+
+					<!-- Interconnected nodes representing human connections -->
+					<g class="pulse-glow">
+						<circle cx="200" cy="300" r="12" fill="#FFD700" />
+						<circle cx="300" cy="250" r="15" fill="#FBBF24" />
+						<circle cx="400" cy="320" r="10" fill="#FFD700" />
+						<circle cx="350" cy="400" r="13" fill="#FBBF24" />
+						<circle cx="250" cy="380" r="11" fill="#FFD700" />
+
+						<!-- Connection lines -->
+						<line x1="200" y1="300" x2="300" y2="250" stroke="#FBBF24" stroke-width="3" opacity="0.6" />
+						<line x1="300" y1="250" x2="400" y2="320" stroke="#FBBF24" stroke-width="3" opacity="0.6" />
+						<line x1="400" y1="320" x2="350" y2="400" stroke="#FBBF24" stroke-width="3" opacity="0.6" />
+						<line x1="350" y1="400" x2="250" y2="380" stroke="#FBBF24" stroke-width="3" opacity="0.6" />
+						<line x1="250" y1="380" x2="200" y2="300" stroke="#FBBF24" stroke-width="3" opacity="0.6" />
+					</g>
+
+					<!-- Accessibility icons -->
+					<g class="floating-animation">
+						<!-- Universal access symbol -->
+						<circle cx="120" cy="400" r="25" fill="rgba(255,255,255,0.2)" stroke="#FFD700"
+							stroke-width="2" />
+						<circle cx="120" cy="390" r="6" fill="#FFD700" />
+						<path d="M105 405 Q120 400 135 405 L135 415 Q120 420 105 415 Z" fill="#FFD700" />
+						<line x1="110" y1="410" x2="110" y2="425" stroke="#FFD700" stroke-width="3" />
+						<line x1="130" y1="410" x2="130" y2="425" stroke="#FFD700" stroke-width="3" />
+
+						<!-- Eye symbol for visibility -->
+						<ellipse cx="480" cy="400" rx="20" ry="12" fill="rgba(255,255,255,0.2)" stroke="#FFD700"
+							stroke-width="2" />
+						<circle cx="480" cy="400" r="6" fill="#FFD700" />
+					</g>
+
+					<!-- Interface elements -->
+					<g class="floating-animation-delayed">
+						<!-- Mobile device outline -->
+						<rect x="380" y="180" width="60" height="100" rx="10" fill="rgba(255,255,255,0.1)"
+							stroke="#E0E7FF" stroke-width="2" />
+						<rect x="390" y="200" width="40" height="3" rx="1" fill="#C7D2FE" />
+						<rect x="390" y="210" width="30" height="3" rx="1" fill="#C7D2FE" />
+						<rect x="390" y="220" width="35" height="3" rx="1" fill="#C7D2FE" />
+						<circle cx="410" cy="260" r="8" fill="#6366F1" />
+
+						<!-- Desktop interface -->
+						<rect x="80" y="120" width="80" height="50" rx="5" fill="rgba(255,255,255,0.1)" stroke="#E0E7FF"
+							stroke-width="2" />
+						<rect x="90" y="135" width="60" height="2" rx="1" fill="#C7D2FE" />
+						<rect x="90" y="145" width="45" height="2" rx="1" fill="#C7D2FE" />
+						<rect x="90" y="155" width="50" height="2" rx="1" fill="#C7D2FE" />
+					</g>
+
+					<!-- Storytelling elements - speech bubbles -->
+					<g class="floating-animation-delayed-2" opacity="0.4">
+						<ellipse cx="500" cy="250" rx="30" ry="20" fill="rgba(255,255,255,0.2)" />
+						<path d="M485 265 L490 275 L495 265" fill="rgba(255,255,255,0.2)" />
+						<circle cx="490" cy="245" r="2" fill="#FFD700" />
+						<circle cx="500" cy="245" r="2" fill="#FFD700" />
+						<circle cx="510" cy="245" r="2" fill="#FFD700" />
+
+						<ellipse cx="100" cy="320" rx="25" ry="18" fill="rgba(255,255,255,0.2)" />
+						<path d="M115 335 L120 345 L125 335" fill="rgba(255,255,255,0.2)" />
+						<path d="M90 315 Q100 310 110 315" stroke="#FFD700" stroke-width="2" fill="none" />
+					</g>
+				</svg>
+
+			</div>
+
+			<div class="col-lg-8">
+				<h3>Hello! My name is </h3>
+				<h2>Minh-Ha Le</h2>
+				<p>An award-winning <strong>Graphic, UI/UX, and Web Designer</strong> with nearly two decades of experience crafting high-quality, globally impactful digital experiences. I specialize in using visuals, motion, and intuitive interactions to transform complex ideas into engaging, accessible designs.</p>
+
+			</div>
 
 
-				</div>
+			</div>
 			</div>
 		</section>
 		<!-- /About -->
 
 
-	<!-- my role -->
-		<section id="my-role" class="bg-lines py-sm-10 py-10 px-7">
 
-			<div class="container p-0">
 
-				<h5 class="mb-8">MY ROLE</h5>
+		<!-- Portfolio -->
+		<section id="projects">
+			<div class="container py-10">
 
-				<div class="row no-gutter">
+				<!-- portfolio filter -->
+				<!-- <p id="folioFilter" class="text-links small uppercase opacity-09 mb-6">
+					<a href="#" data-filter="*" class="is-active">All</a>
+					<a href="#" data-filter=".website">Website</a>
+					<a href="#" data-filter=".illustration">Illustration</a>
+					<a href="#" data-filter=".infographic">Infographic</a>
+					<a href="#" data-filter=".powerpoint">PowerPoint</a>
+					<a href="#" data-filter=".design">Design</a>
+				</p> -->
+				<!-- /portfolio filter -->
+
+				<!-- Portfolio Grid -->
+				<div class="grid lightbox" data-columns="3" data-gutter="50" data-cell-ratio="5/4"
+					data-filter="#folioFilter">
+
+					<!-- Portfolio Item -->
+					<figure class="portfolio-item wide tall website" data-background="img/myanmar-gen-z.jpg">
+
+						<!-- Make the whole image clickable -->
+						<a href="https://minhhale.github.io/digital-designer/myanmar-gen-z/"
+							class="portfolio-link" 
+							title="Myanmar’s Gen Z fighting for a nation’s future">
+						</a>
+
+						<figcaption>
+							<h5 class="item-title">
+								<a href="https://minhhale.github.io/digital-designer/myanmar-gen-z/"
+									target="_blank">
+									Myanmar’s Gen Z fighting for a nation’s future
+								</a>
+							</h5>
+							<h5 style="color: yellow;">2025 Edward R. Murrow Award – Digital winner</h5>
+							<p>UX/UI | Website Design | Interaction Design	</p>
+						</figcaption>
+					</figure>
+					<!-- /Portfolio Item -->
+
+					<!-- Portfolio Item -->
+					<figure class="portfolio-item website" data-background="img/myanmar-election2020.jpg">
+						<!-- Make the whole image clickable -->
+						<a href="https://minhhale.github.io/digital-designer/myanmar-election-2020/"
+							class="portfolio-link" target="_blank" title="Myanmar Election 2020">
+						</a>
+						<figcaption>
+							<h5 class="item-title">
+								<a href="https://minhhale.github.io/digital-designer/myanmar-election-2020/">Myanmar Election 2020</a>
+							</h5>
+							<p>UX/UI | Website Design </p>
+						</figcaption>
+
+					</figure>
+					<!-- /Portfolio Item -->
+
+
+
+					<!-- Portfolio Item -->
+					<figure class="portfolio-item website" data-background="img/war-crime-board.jpg">
+						<!-- Make the whole image clickable -->
+						<a href="https://www.rfa.org/english/special-reports/junta-two-years/" class="portfolio-link"
+							target="_blank" title="Under the gun in Myanmar">
+						</a>
+						<figcaption>
+							<h5 class="item-title">
+								<a href="https://www.rfa.org/english/special-reports/junta-two-years/" target="_blank">Under the gun in Myanmar</a>
+							</h5>
+							<h6 style="color: yellow;"><strong>2024 Edward R. Murrow Award – Digital winner</strong></h6>
+							<p>UX/UI | Website Design 	</p>
+						</figcaption>
+					</figure>
+					<!-- /Portfolio Item -->
+
 					
-					<!-- my role Item -->
-					<div class="col-md-3" data-animation="fade-in-bottom 1.2s .2s">
-						<h4 class="bold">UX/UI Design </h4>
-						<p>Used Figma to design wireframes and prototypes that structured and enhanced the project’s narrative flow.</p>
-					</div>
-					<!-- /my role Item -->
-					
-					<!-- my role Item -->
-					<div class="col-md-3" data-animation="fade-in-bottom 1.2s .4s">
-						<h4 class="bold">Visual Design</h4>
-						<p>Designed layout, typography, and data visualization to highlight the human-centered story.</p>
-					</div>
-					<!-- /my role Item -->
-					
-					<!-- my role Item -->
-					<div class="col-md-3" data-animation="fade-in-bottom 1.2s .6s">
-						<h4 class="bold">Front-End Development</h4>
-						<p>Built with HTML, CSS, Gsap, and JavaScript for a smooth reading experience.</p>
-					</div>
-					<!-- /my role Item -->
+					<!-- Portfolio Item -->
+					<figure class="portfolio-item website" data-background="img/nyah-mway.png">
+						<!-- Make the whole image clickable -->
+						<a href="https://www.rfa.org/english/special-reports/nyah-mway-utica-police-killing/" class="portfolio-link"
+							target="_blank"
+							title="Russian engagement with Southeast Asia and Russian arrivals to the region are rising.">
+						</a>
+						<figcaption>
+							<h5 class="item-title">
+								<a href="https://www.rfa.org/english/special-reports/nyah-mway-utica-police-killing/" target="_blank">Nyah Mway</a>
+							</h5>
+							<h6 style="color: yellow;"><strong>2025 Edward R. Murrow Award</strong></h6>
+							<p>UX/UI | Website Design </p>
+						</figcaption>
+					</figure>
+					<!-- /Portfolio Item -->
 
-					<!-- my role Item -->
-					<div class="col-md-3" data-animation="fade-in-bottom 1.2s .6s">
-						<h4 class="bold">Accessibility Compliance</h4>
-						<p>Applied WCAG guidelines for screen readers, color contrast, and responsive scaling</p>
-					</div>
-					<!-- /my role Item -->
+					<!-- Portfolio Item -->
+					<figure class="portfolio-item website" data-background="img/china-foreign-tech-scs.jpg">
+						<!-- Make the whole image clickable -->
+						<a href="https://www.rfa.org/english/special-reports/china-foreign-tech-scs/"
+							class="portfolio-link" target="_blank"
+							title="How China is Leveraging Foreign Technology to Dominate the South China Sea">
+						</a>
+						<figcaption>
+							<h5 class="item-title">
+								<a href="https://www.rfa.org/english/special-reports/china-foreign-tech-scs/">China Foreign Tech</a>
+							</h5>
+							<p>UX/UI | Website Design | Interaction Design	</p>
+						</figcaption>
+					</figure>
+					<!-- /Portfolio Item -->
+
+					<!-- Portfolio Item -->
+					<figure class="portfolio-item website" data-background="img/nkdreamers.png">
+						<!-- Make the whole image clickable -->
+
+						<figcaption>
+							<h5 class="item-title">
+								<a href="https://www.rfa.org/english/special-reports/northkorean-uk-escapes/"
+									target="_blank" class="hover-red"> Three North Korean immigrants</a>
+							</h5>
+							<p>UX/UI | Website Design 	</p>
+						</figcaption>
+						<a href="https://www.rfa.org/english/special-reports/northkorean-uk-escapes/"
+							class="portfolio-link" target="_blank"
+							title="Three North Korean immigrants in the UK talk about their escapes and dreams.">
+						</a>
+					</figure>
+
+					<!-- /Portfolio Item -->
+
+
+					<!-- Portfolio Item -->
+					<figure class="portfolio-item wide website" data-background="img/graphic-design.png">
+						<!-- Make the whole image clickable -->
+						<a href="https://minhhale.github.io/special-reports/graphics/" class="portfolio-link"
+							target="_blank" title="Visual Storytelling">
+						</a>
+						<figcaption>
+							<h5 class="item-title">
+								<a href="https://minhhale.github.io/special-reports/graphics/">Visual Storytelling</a>
+							</h5>
+							<p>Graphics | Infographic | Chart | Map</p>
+						</figcaption>
+					</figure>
+					<!-- /Portfolio Item -->
+
+					<!-- Portfolio Item -->
+					<figure class="portfolio-item" data-background="img/web-portfolio.png">
+						<!-- Make the whole image clickable -->
+						<a href="https://minhhale.github.io/" class="portfolio-link"
+							target="_blank" title="Web Portfolio">
+						</a>
+						<figcaption>
+							<h5 class="item-title">
+								<a href="https://minhhale.github.io/">Web Portfolio</a>
+							</h5>
+							<p>Web Design | Development </p>
+						</figcaption>
+					</figure>
+					<!-- /Portfolio Item -->
 
 				</div>
+				<!-- /Portfolio Grid -->
+
 			</div>
 		</section>
-		<!-- /my role -->
+		<!-- /Portfolio -->
 
-			<!-- Challenge -->
-		<section id="challenge" data-background="#003566">
-		<div class="container py-6 ">
-				<div class="row justify-content-center text-center text-light">
-					<div class="col-md-8">
-						
-						<h1 class="bold text-light">The Challenge</h1>
-						<p class="text-light">The editorial team needed a way to translate deeply complex reporting into a digital experience that could hold readers’ attention while respecting the sensitivity of the subject matter. The challenge was to balance <strong> immersive storytelling with clarity, accessibility, and emotional impact.</strong></p>
+		<!-- Experience -->
+		<section id="awards" data-background="#003566">
+			<div class="container text-light py-10">
+
+				<div class="row two-col-center">
+
+					<!-- title column -->
+					<div class="col-xl-6 col-lg-4">
+						<h5 class="mt-7"> 🏆 AWARDS & HONORS</h5>
+					</div>
+
+					<!-- content column -->
+					<div class="col-xl-6 col-lg-8">
+
+						<!-- experience item -->
+						<div class="row my-5" data-animation="fade-in-left 1s .9s">
+							<div class="col-md-3">
+								<div class="opacity-04">2025</div>
+							</div>
+							<div class="col">
+								<h5>Edward R. Murrow Award </h5>
+								<p>Gen Z in Myanmar - Digital Special Coverage -  Multi-format UX strategy </p>
+							</div>
+						</div>
+
+						<!-- experience item -->
+						<div class="row my-5" data-animation="fade-in-left 1s .4s">
+							<div class="col-md-3">
+								<div class="opacity-04">2024</div>
+							</div>
+							<div class="col">
+								<h5>Edward R. Murrow Award </h5>
+								<p>Under the gun in Myanmar - Multimedia Feature on Myanmar - Led UX for interactive multimedia feature</p>
+							</div>
+						</div>
+
+						<!-- experience item -->
+						<div class="row my-5" data-animation="fade-in-left 1s .7s">
+							<div class="col-md-3">
+								<div class="opacity-04">2018</div>
+							</div>
+							<div class="col">
+								<h5>Gracie Award</h5>
+								<p>Rohingya Crisis Multimedia Package - Online Feature </p>
+							</div>
+						</div>
+
+						<!-- experience item -->
+						<div class="row my-5" data-animation="fade-in-left 1s .7s">
+							<div class="col-md-3">
+								<div class="opacity-04">2010</div>
+							</div>
+							<div class="col">
+								<h5>Society of Environmental Journalists</h5>
+								<p> The Last Untamed River - Outstanding Reporting</p>
+							</div>
+						</div>
 
 					</div>
 				</div>
-				
-			</div>
-		</section>
-		<!-- /Challenge -->
 
-			<!-- Process -->
-<section id="process" class="bg-lines">
-  <div class="container py-6">
-    <div class="row no-gutter" style="gap: 5em"><!-- added Bootstrap gap -->
-      
-      <!-- Left Column -->
-      <div class="col-xl-5 col-lg-4 text-dark">
-        <h3>The Process</h3>
-        <hr style="height: 1em; width: 30%;">
+				<!-- separator -->
+				<hr data-background="#444" class="mb-9">
 
-        <h5>1. Research & Planning</h5>
-        <ul>
-          <li>- Reviewed RFA’s editorial goals and audience needs.</li>
-          <li>- Mapped out content flow with editors to highlight the human stories alongside the political context.</li>
-          <li>- Created low-fidelity wireframes to define narrative pacing (intro → personal stories → conflict → call to reflection).</li>
-        </ul>
+				<div id="skills" class="row">
 
-        <h5>2. Design & Prototyping</h5>
-        <ul>
-          <li>- Developed a <strong>scroll-based storytelling layout</strong> inspired by digital longform journalism.</li>
-          <li>- Chose typography and color palette to balance <strong>seriousness</strong> (dark, muted tones) with <strong>urgency</strong> (highlight color accents).</li>
-          <li>- Integrated large hero images and section dividers to create emotional impact.</li>
-        </ul>
-
-        <h5>3. Accessibility & Responsiveness</h5>
-        <ul>
-          <li>- Implemented alt text and semantic HTML for screen reader compatibility.</li>
-          <li>- Designed for breakpoints (desktop, tablet, mobile) to ensure <strong>seamless reading across devices.</strong></li>
-          <li>- Applied WCAG contrast standards for legibility.</li>
-        </ul>
-
-        <hr style="height: 5em;">
-      </div>
-      
-      <!-- Right Column -->
-      <div class="col-xl-6 col-lg-4">
-        <div class="row no-gutter">
-          <!-- Image items -->
-          <div class="col-md-6 mb-8" data-animation="fade-in-bottom 1.2s .2s">
-            <img src="img/sketch1.jpg" alt="sketch1" class="shadow-img">
-          </div>
-
-          <div class="col-md-6 mb-8" data-animation="fade-in-bottom 1.2s .4s">
-            <img src="img/sketch2.jpg" alt="sketch2" class="shadow-img">
-          </div>
-
-          <div class="col-md-6 mb-8" data-animation="fade-in-bottom 1.2s .6s">
-            <img src="img/wireframe1.png" alt="wireframe1" class="shadow-img">
-          </div>
-
-          <div class="col-md-6 mb-8" data-animation="fade-in-bottom 1.2s .6s">
-            <img src="img/wireframe2.png" alt="wireframe2" class="shadow-img">
-          </div>
-        </div>
-
-        <!-- Button -->
-        <div class="row mb-6 justify-content-center text-center text-light">
-          <button class="btn-hover-effect">
-            <a href="https://www.figma.com/proto/shtBgVB72LhtonipuUi6V0/RFA?node-id=0a-1&p=f&t=SkefpR4yTqhnZ02r-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" target="_blank">
-              View the wireframe prototype on Figma
-            </a>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-		<!-- /Process -->
-
-		<!-- Solution -->
-		<section id="solution" data-background="#003566">
-		<div class="container py-6 ">
-				<div class="row justify-content-center text-center text-light">
-					<div class="col-md-8">
-						
-						<h1 class="bold text-light">The Solution</h1>
-						<p class="text-light">The final website delivers:</p>
-
-					</div>
-				</div>
-				
-			</div>
-		</section>
-		<!-- /Solution -->
-
-		<!-- solution -->
-		<section class="bg-lines" >
-			<div class="container py-6">
-
-				<div class="row no-gutter" style="gap: 5em">
-
-					<div class="col-xl-5 col-lg-4 text-dark">
-						<hr style="height: 1em; width: 30%;">
-						<p><strong>- A cinematic scrolling experience</strong> with high-impact photography.</p>
-						<p><strong>- Chapter-based storytelling</strong> that guides readers through a structured narrative.</p>
-						<hr style="height: 5em;">
-						<img src="img/main-page-desktop.gif" alt="main-page-desktop" class="shadow-img">
-						<hr style="height: 5em;">
-
+					<!-- title column -->
+					<div class="col-xl-6 col-lg-4">
+						<h5 class="py-4">🧰 SKILLS & TOOLS</h5>
 					</div>
 
-					<div class="col-xl-6 col-lg-6">
+					<!-- content column -->
+					<div class="col-xl-6 col-lg-8">
+
+						<!-- group -->
 						<div class="row">
-							
-							<!-- Team Member -->
-							<div class="col-md-6 mb-8" data-animation="fade-in-bottom 1.2s .2s">
-							
-								<img src="img/main-page.gif" alt="main-page" >
-								
+							<!-- group title -->
+							<div class="col-md-3 pt-4 mb-0">
+								<p class="opacity-07">Development</p>
 							</div>
-							<!-- /Team Member -->
-
-							<!-- Team Member -->
-							<div class="col-md-6 mb-8" data-animation="fade-in-bottom 1.2s .4s">
-							
-								<img src="img/main-page2.gif" alt="main-page2" >
-								
+							<!-- skills list -->
+							<div class="col">
+								<div class="row">
+									<div class="col-4 py-4">HTML</div>
+									<div class="col-4 py-4">CSS</div>
+									<div class="col-4 py-4">Javascript</div>
+									<div class="col-4 py-4">ES6</div>
+									<div class="col-4 py-4">React</div>
+									<div class="col-4 py-4">Gsap</div>
+									<div class="col-4 py-4">SASS</div>
+									<div class="col-4 py-4">Three js</div>
+									<div class="col-4 py-4">Tailwind CSS</div>
+								</div>
 							</div>
-							<!-- /Team Member -->
-
 						</div>
+						<!-- /group -->
 
+						<hr data-background="#333">
 
+						<!-- group -->
+						<div class="row">
+							<!-- group title -->
+							<div class="col-md-3 pt-4 mb-0">
+								<p class="opacity-07">Design</p>
+							</div>
+							<!-- skills list -->
+							<div class="col">
+								<div class="row">
+									<div class="col-4 py-4">UI/UX</div>
+									<div class="col-4 py-4">Figma</div>
+									<div class="col-4 py-4">Adobe XD</div>
+									<div class="col-4 py-4">Photoshop</div>
+									<div class="col-4 py-4">Illustrator</div>
+									<div class="col-4 py-4">Adobe After Effects</div>
+								</div>
+							</div>
 						</div>
-					
+						<!-- /group -->
+
+
+					</div>
 
 				</div>
+
 			</div>
 		</section>
-		<!-- /solution -->
-
-				<!-- solution -->
-		<section id="solution" class="bg-lines" >
-			<div class="container py-6">
-
-				<div class="row no-gutter" style="gap: 5em">
-
-					<div class="col-xl-5 col-lg-4 text-dark">
-						<hr style="height: 1em; width: 30%;">
-						<p><strong>- Interactive elements</strong> (timelines, callouts, visual markers) to keep readers engaged.</p>
-						<p><strong>- A responsive, mobile-first design</strong> ensuring accessibility across devices.</p>
-						<hr style="height: 5em;">
-						<img src="img/individual-page-desktop.gif" alt="main-page-desktop" class="shadow-img">
-						<hr style="height: 5em;">
-
-					</div>
-
-					<div class="col-xl-6 col-lg-6">
-						<div class="row no-gutter">
-							
-							<!-- Team Member -->
-							<div class="col-md-6 mb-8" data-animation="fade-in-bottom 1.2s .2s">
-							
-								<img src="img/individual-page.gif" alt="individual-page">
-								
-							</div>
-							<!-- /Team Member -->
-
-							<!-- Team Member -->
-							<div class="col-md-6 mb-8" data-animation="fade-in-bottom 1.2s .4s">
-							
-								<img src="img/individual-page2.gif" alt="individual-page2">
-								
-							</div>
-							<!-- /Team Member -->
-
-						</div>
+		<!-- /Experience -->
 
 
-						</div>
-					
-
-				</div>
-			</div>
-		</section>
-		<!-- /solution -->
-
-		<!-- Impact -->
-		<section id="impact" data-background="#003566">
-		<div class="container py-6 ">
-				<div class="row justify-content-center text-center text-light">
-					<div class="col-md-8">
-						
-						<h1 class="bold text-light">The Impact
-						<br>🏆 </h1>
-					</div>
-				</div>
-				
-			</div>
-		</section>
-		<!-- /Impact -->
-
-		<!-- Impact -->
-		<section id="impact2" class="bg-lines" >
-			<div class="container py-6">
-
-				<div class="row no-gutter" style="gap: 5em">
-
-					<div class="col-xl-5 col-lg-4 text-dark">
-						<hr style="height: 1em; width: 30%;">
-						<p ><strong>- Won the 2025 Edward R. Murrow Awards  Digital</strong> for excellence in multimedia journalism.</p>
-						<p>- Garnered <strong>global recognition</strong> for effectively amplifying Gen Z voices in Myanmar.</p>
-						<p>- Increased <strong>audience engagement</strong> through time-on-page metrics compared to traditional article formats.</p>
-						<p>- Strengthened the newsroom’s reputation for innovation in digital storytelling.</p>
-						<hr style="height: 3em;">
-						
-
-					</div>
-
-					<div class="col-xl-6 col-lg-6">
-
-						<hr style="height: 1em; width: 30%;">
-						<img src="img/edward-murrow-award.jpg" class="shadow-img" alt="edward-murrow-award">
-						<hr style="height: 1em;">
-						<img src="img/google-analytics.png" class="shadow-img" alt="google-analytics">
-						<hr style="height: 5em;">
-
-					</div>
-
-				</div>
-					
-				</div>
-	
-		</section>
-		<!-- Impact -->
-
-	
 	</main>
 	<!-- /Main Content -->
-
 
 	<!-- Footer -->
 	<footer id="footer">
@@ -554,13 +616,7 @@
 
 		<!-- Social/Contact Links -->
 		<div class="small text-links">
-			Tel: 202-277-0216 &nbsp; | &nbsp;  minhhadc@gmail.com &nbsp; | &nbsp; 
-			
-			&nbsp;<a href="https://www.linkedin.com/in/minh-ha-le/" target="_blank">LinkedIn</a>
-			
-			&nbsp;<a href="https://minhhale.github.io/" target="_blank">Web Developer Portfolio</a>
-			
-			&nbsp;<a href="https://minhhale.github.io/special-reports/graphics/" target="_blank">Graphics Portfolio</a>
+			<a href="https://www.linkedin.com/in/minh-ha-le/">LinkedIn</a>
 		</div>
 
 	</footer>
@@ -569,26 +625,6 @@
 	<!-- JS -->
 	<script src="js/core.js"></script>
 	<script src="js/theme.js"></script>
-
-
-    <script src='https://unpkg.com/gsap@3/dist/gsap.min.js'></script>
-    <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
-    <script src='https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js'></script>
-  
-    <script>
-      gsap
-  .timeline({
-    scrollTrigger:{
-      pin:'.first-section',
-      trigger:'.first-section',
-      start:'top top',
-      end: "+=200%",
-      scrub:2
-    }})
-
-  .fromTo('#title', {opacity: 1, }, {opacity: 0, duration: 2})
-    </script>
-
 
 
 </body>
