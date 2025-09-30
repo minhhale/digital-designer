@@ -23,6 +23,7 @@ body{
 	-webkit-transition: opacity 800ms;
 	transition: opacity 800ms;
 	opacity: 1;
+	color:#050505;
 }
 
 
@@ -53,6 +54,9 @@ a:focus {
     background: #f0f0f05b;
     padding: 0.5rem 1rem;
     border-radius: 8px;
+	  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 20px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     z-index: 1000;
 }
@@ -1774,6 +1778,10 @@ a.page-title-wrapper:hover .page-subtitle:after {
 .blog article a:hover {
 	opacity: .7;
 }
+.blog article .details {
+	padding: 25px 25px 28px;
+}
+
 .blog article .details {
 	padding: 25px 25px 28px;
 }
